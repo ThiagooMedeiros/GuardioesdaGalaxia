@@ -18,18 +18,18 @@
   <div class="background">
     <div id="images">
       <img src="./assets/members/peter-quill.png" alt="">
-      <img src="./assets/members/gamora.png" alt="">
-      <img src="./assets/members/drax.png" alt="">
-      <img src="./assets/members/mantis.png" alt="">
-      <img src="/assets/members/rocket.png" alt="">
-      <img src="/assets/members/groot.png" alt="">
+      <img src="./assets/members/gamora.png" alt="" loading="lazy">
+      <img src="./assets/members/drax.png" alt="" loading="lazy">
+      <img src="./assets/members/mantis.png" alt="" loading="lazy">
+      <img src="/assets/members/rocket.png" alt="" loading="lazy">
+      <img src="/assets/members/groot.png" alt="" loading="lazy">
     </div>
   </div>
 
 
   <div>
-    <button type="button">voltar</button>
-    <button type="button">avançar</button>
+    <button type="button" onclick="navigationMember(-1)" id="button_prev" disabled >voltar</button>
+    <button type="button" onclick="navigationMember(1)" id="button_next" >avançar</button>
   </div>
 
   <script src="./script/index.js"></script>

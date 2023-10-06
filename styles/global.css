@@ -20,7 +20,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow: hidden; /*esconde o scroll*/
   color: var(--text);
   font-family: 'Rubik', sans-serif;
 }
