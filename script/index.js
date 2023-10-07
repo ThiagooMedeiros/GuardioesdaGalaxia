@@ -8,9 +8,10 @@ const members = [
 ]
 
 let activeMember = 0
-console.log(activeMember)
-
 const images = document.getElementById('images')
+const menu = document.getElementById('menu')
+const memberName = document.getElementById('member_name')
+
 
 function changeStatusButtons() {
   const prev = document.getElementById('button_prev')
@@ -30,9 +31,15 @@ function navigationMember(direction){
 
   const member = members[activeMember]
 
-  console.log(activeMember, member)
-
   images.style.transform = `translateY(${-100 * activeMember}vh)` //muda os personagens com translate
 
+  memberName.classList = member.id
+
+  changeName(member.name)
+
   changeStatusButtons()
+}
+
+function changeMenu(){
+  menu.classList.toggle('active')
 }

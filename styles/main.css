@@ -1,0 +1,63 @@
+main{
+  align-self: flex-end; /*canto inferior direito*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 12px;
+}
+main > div{
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+main > div > button{
+  width: 40px;
+  height: 40px;
+
+  background: transparent;
+  border-radius: 100%;
+  border: 1px solid var(--text);
+
+  transition: opacity 0.4s;
+}
+main > div > button:disabled{
+  opacity: 0.4;
+}
+main > div > button > svg > path{
+  fill: var(--text);
+}
+main > #member_name{
+  font-size: 150px;
+  letter-spacing: 6px;
+  font-weight: 400;
+
+  color: transparent; /*assim eu consigo mudar a cor de cada nome*/
+  font-family: 'Star Guard Italic';
+
+  padding-right: 10px;
+}
+#member_name.peter {
+  background: var(--peter);
+  -webkit-background-clip: text; /*ainda em testes*/
+}
+#member_name.gamora {
+  background: var(--gamora);
+  -webkit-background-clip: text;
+}
+#member_name.drax {
+  background: var(--drax);
+  -webkit-background-clip: text;
+}
+#member_name.mantis {
+  background: var(--mantis);
+  -webkit-background-clip: text;
+}
+#member_name.rocket {
+  background: var(--rocket);
+  -webkit-background-clip: text;
+}
+#member_name.groot {
+  background: var(--groot);
+  -webkit-background-clip: text;
+}
