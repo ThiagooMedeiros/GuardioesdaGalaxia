@@ -1,0 +1,47 @@
+#navigation{
+  position: fixed;
+  top: 0;
+  right: -600px;
+
+  width: 600px;
+  height: 100vh;
+
+  background: var(--navi);
+  backdrop-filter: blur(2px);
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+
+  padding: 72px 80px 0;
+  transition: all 0.4s;
+
+}
+#navigation.active{
+  right: 0;
+
+}
+#navigation > strong{
+  font-size: 32px;
+
+}
+#navigation > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 40px;
+}
+#navigation > div > button{
+  border: 0;
+  background: transparent;
+}
+#navigation > div > button > img{
+  filter: grayscale(1); /*preto e branco*/
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+#navigation > div > button:hover > img{
+  cursor: pointer;
+  filter: grayscale(0);
+  opacity: 1;
+  transform: translateY(-10px);
+}
