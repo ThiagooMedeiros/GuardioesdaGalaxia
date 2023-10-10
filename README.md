@@ -14,6 +14,10 @@ Pagina que mostra os personagens principais de Guardiões da Galáxia, com anima
   <img alt="Guardiões da Galáxia photo" src="./assets/guardiões0.png" width="100%">
 </p>
 
+<p align="center">
+  <img alt="Guardiões da Galáxia photo" src="./assets/guardiões1.png" width="100%">
+</p>
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
